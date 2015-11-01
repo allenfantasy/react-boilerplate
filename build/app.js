@@ -55,11 +55,11 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactDom = __webpack_require__(/*! react-dom */ 159);
+	var _reactDom = __webpack_require__(/*! react-dom */ 158);
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 	
-	var _componentsMyComponentJsx = __webpack_require__(/*! ./components/MyComponent.jsx */ 158);
+	var _componentsMyComponentJsx = __webpack_require__(/*! ./components/MyComponent.jsx */ 159);
 	
 	var _componentsMyComponentJsx2 = _interopRequireDefault(_componentsMyComponentJsx);
 	
@@ -20111,6 +20111,17 @@
 
 /***/ },
 /* 158 */
+/*!******************************!*\
+  !*** ./~/react-dom/index.js ***!
+  \******************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	module.exports = __webpack_require__(/*! react/lib/ReactDOM */ 3);
+
+/***/ },
+/* 159 */
 /*!***************************************!*\
   !*** ./js/components/MyComponent.jsx ***!
   \***************************************/
@@ -20137,17 +20148,6 @@
 	});
 	
 	module.exports = MyComponent;
-
-/***/ },
-/* 159 */
-/*!******************************!*\
-  !*** ./~/react-dom/index.js ***!
-  \******************************/
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	module.exports = __webpack_require__(/*! react/lib/ReactDOM */ 3);
 
 /***/ }
 /******/ ]);
