@@ -4,20 +4,26 @@
   "description": "Quick packager-agnostic boilerplate for React modules using JSX",
   "main": "lib/index.js",
   "dependencies": {
-    "react": "~0.8",
-    "statics-stylesheets": "~0.0.1",
-    "stylesheets": "~0.0.3"
+    "react": "^0.14.1",
+    "react-dom": "^0.14.1"
   },
   "devDependencies": {
-    "jsxc": "~0.1.6"
+    "babel": "^5.8.23",
+    "babel-core": "^5.8.33",
+    "babel-loader": "^5.3.3",
+    "browser-sync": "^2.9.11",
+    "css-loader": "^0.21.0",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.2"
   },
   "scripts": {
-    "start": "jsxc --watch src/ lib/",
-    "build": "jsxc src/ lib/"
+    "start": "npm run webpack & npm run server & wait",
+    "webpack": "webpack -d --watch --progress js/app.jsx build/app.js --module-bind 'jsx=babel' --module-bind 'js=babel'",
+    "server": "browser-sync start --server --files='build/'"
   },
-  "files": ["lib/", "USAGE.txt", "static/"],
-  "staticRoot": "./static/",
-  "staticPlugin": "statics-stylesheets",
-  "author": "Pete Hunt",
+  "author": [
+    "Pete Hunt",
+    "Allen Wu <allenwu1018@gmail.com>"
+  ],
   "license": "Apache 2"
 }
